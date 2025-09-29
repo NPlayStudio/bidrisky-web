@@ -58,12 +58,38 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-golden': 'var(--gradient-golden)',
+        'gradient-hero': 'var(--gradient-hero)',
+      },
+      boxShadow: {
+        'auction': 'var(--shadow-auction)',
+        'golden': 'var(--shadow-golden)',
+        'card': 'var(--shadow-card)',
+      },
+      transitionTimingFunction: {
+        'auction': 'var(--transition-auction)',
+        'smooth': 'var(--transition-smooth)',
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "auction-reveal": {
+          "0%": { transform: "rotateY(180deg)", opacity: "0" },
+          "100%": { transform: "rotateY(0deg)", opacity: "1" }
+        },
+        "golden-shimmer": {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" }
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" }
+        },
         "accordion-down": {
           from: {
             height: "0",
@@ -84,6 +110,11 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "auction-reveal": "auction-reveal 0.6s ease-out",
+        "golden-shimmer": "golden-shimmer 2s ease-in-out infinite",
+        "float": "float 3s ease-in-out infinite",
+        "fade-in": "fade-in 0.6s ease-out",
+        "scale-in": "scale-in 0.4s ease-out",
       },
     },
   },
