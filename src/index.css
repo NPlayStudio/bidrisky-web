@@ -126,10 +126,20 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: -0.01em;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', 'Georgia', serif;
+    font-family: 'Playfair Display', 'Crimson Text', 'Georgia', serif;
+    font-optical-sizing: auto;
+    letter-spacing: -0.02em;
+  }
+  
+  .font-display {
+    font-family: 'Montserrat', 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
   }
 }
 

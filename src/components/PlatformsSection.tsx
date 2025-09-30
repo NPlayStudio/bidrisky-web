@@ -1,10 +1,46 @@
 const PlatformsSection = () => {
   const platforms = [
-    { name: "Mac", icon: "🍎", available: true },
-    { name: "iPhone", icon: "📱", available: true },
-    { name: "Android", icon: "🤖", available: true },
-    { name: "Windows", icon: "🪟", available: false }
+    { 
+      name: "Mac", 
+      icon: "🍎", 
+      available: true,
+      downloadUrl: "/downloads/bidrisky-mac.dmg"
+    },
+    { 
+      name: "iPhone", 
+      icon: "📱", 
+      available: true,
+      downloadUrl: "https://testflight.apple.com/join/bidrisky"
+    },
+    { 
+      name: "Android", 
+      icon: "🤖", 
+      available: true,
+      downloadUrl: "/downloads/bidrisky-android.apk"
+    },
+    { 
+      name: "Windows", 
+      icon: "🪟", 
+      available: false,
+      downloadUrl: ""
+    }
   ];
+
+  const handlePlatformClick = (platform: typeof platforms[0]) => {
+    if (!platform.available) return;
+    
+    if (platform.name === "iPhone") {
+      window.open(platform.downloadUrl, '_blank');
+    } else {
+      // For Mac and Android, trigger download
+      const link = document.createElement('a');
+      link.href = platform.downloadUrl;
+      link.download = '';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
 
   return (
     <section id="download-section" className="py-20 px-6 bg-gradient-to-b from-background to-muted/30">
@@ -20,10 +56,11 @@ const PlatformsSection = () => {
           {platforms.map((platform, index) => (
             <div 
               key={platform.name}
+              onClick={() => handlePlatformClick(platform)}
               className={`flex items-center gap-3 px-8 py-6 rounded-lg border transition-auction ${
                 platform.available 
-                  ? 'bg-card border-border/50 hover:border-primary hover:shadow-card cursor-pointer' 
-                  : 'bg-muted/50 border-muted text-muted-foreground opacity-60'
+                  ? 'bg-card border-border/50 hover:border-primary hover:shadow-card cursor-pointer hover:scale-105' 
+                  : 'bg-muted/50 border-muted text-muted-foreground opacity-60 cursor-not-allowed'
               }`}
             >
               <span className="text-3xl">{platform.icon}</span>

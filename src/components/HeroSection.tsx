@@ -1,10 +1,15 @@
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "./ThemeToggle";
 import heroImage from "@/assets/hero-auction-house.jpg";
 import bidsBanner from "@/assets/bids-banner.png";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
+      {/* Theme toggle */}
+      <div className="absolute top-6 right-6 z-20">
+        <ThemeToggle />
+      </div>
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img 
