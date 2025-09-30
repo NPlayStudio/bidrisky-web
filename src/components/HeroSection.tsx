@@ -62,15 +62,17 @@ const HeroSection = () => {
         </div>
         
         {/* Call to action buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in" style={{ animationDelay: '0.8s' }}>
-          <Button variant="premium" size="hero" className="min-w-[200px]">
-            Play Free Demo
-          </Button>
-          <Button variant="golden" size="hero" className="min-w-[200px]">
-            Buy Full Game
-          </Button>
-          <Button variant="bid" size="lg" className="min-w-[160px]">
-            Watch Trailer
+        <div className="flex justify-center items-center animate-fade-in" style={{ animationDelay: '0.8s' }}>
+          <Button 
+            variant="premium" 
+            size="hero" 
+            className="min-w-[200px]"
+            onClick={() => {
+              const downloadSection = document.getElementById('download-section');
+              downloadSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
+            Play
           </Button>
         </div>
         

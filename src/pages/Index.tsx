@@ -1,7 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import GameOverview from "@/components/GameOverview";
-import HowToPlay from "@/components/HowToPlay";
-import DownloadSection from "@/components/DownloadSection";
+// import HowToPlay from "@/components/HowToPlay";
+import PlatformsSection from "@/components/PlatformsSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -9,8 +9,8 @@ const Index = () => {
     <div className="min-h-screen">
       <HeroSection />
       <GameOverview />
-      <HowToPlay />
-      <DownloadSection />
+      {/* <HowToPlay /> */}
+      <PlatformsSection />
       <Footer />
     </div>
   );
