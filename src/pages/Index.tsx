@@ -8,10 +8,10 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <HeroSection />
-      <GameOverview />
+      {/* <GameOverview /> */}
       {/* <HowToPlay /> */}
-      <PlatformsSection />
-      <Footer />
+      {/* <PlatformsSection /> */}
+      {/* <Footer /> */}
     </div>
   );
 };
