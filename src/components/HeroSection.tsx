@@ -91,7 +91,7 @@ const HeroSection = () => {
           <img 
             src={bidsBanner} 
             alt="BidRisky - Sealed Bids to Un-Sealed Bids" 
-            className="mx-auto h-32 md:h-40 drop-shadow-2xl"
+            className="w-full h-full drop-shadow-2xl"
           />
         </div>
         
