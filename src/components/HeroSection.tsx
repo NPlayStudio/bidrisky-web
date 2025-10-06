@@ -53,8 +53,9 @@ const HeroSection = () => {
         break;
       default:
         // For Windows, Linux, or Unknown, scroll to download section
-        const downloadSection = document.getElementById('download-section');
-        downloadSection?.scrollIntoView({ behavior: 'smooth' });
+        //const downloadSection = document.getElementById('download-section');
+        //downloadSection?.scrollIntoView({ behavior: 'smooth' });
+        alert(`Comming soon for ${platform}. You can play game on IOS, Android and MAC.`);
     }
   };
 
@@ -105,7 +106,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 shadow-card border border-border/50">
             <div className="text-3xl mb-3">👥</div>
-            <h3 className="text-muted-foreground text-lg mb-2">5 Traders</h3>
+            <h3 className="font-semibold text-lg mb-2">5 Traders</h3>
             <p className="text-muted-foreground text-sm"></p>
           </div>
           <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 shadow-card border border-border/50">
