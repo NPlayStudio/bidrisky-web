@@ -95,11 +95,11 @@ const HeroSection = () => {
           />
         </div>
         
-        {/* Main headline */}
+        {/* Main headline
         <h1 className="text-4xl md:text-7xl font-bold text-foreground mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           Master the Art of <br />
           <span className="bg-gradient-primary bg-clip-text text-transparent">Risky Bids</span>
-        </h1>
+        </h1>*/}
         
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
