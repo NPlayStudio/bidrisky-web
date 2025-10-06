@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "./ThemeToggle";
 import heroImage from "@/assets/hero-auction-house.jpg";
-import bidsBanner from "@/assets/bids-banner.png";
+import bidsBanner from "@/assets/bids-banner-new.png";
 import { useState } from "react";
 
 
@@ -90,7 +90,7 @@ const HeroSection = () => {
         <div className="mb-8 animate-fade-in">
           <img 
             src={bidsBanner} 
-            alt="BidRisky - Sealed Bids to Un-Sealed Bids" 
+            alt="BidRisky - with game destiny in your own hands" 
             className="mx-auto h-32 md:h-40 drop-shadow-2xl"
           />
         </div>
