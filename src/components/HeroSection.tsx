@@ -2,8 +2,11 @@ import { Button } from "@/components/ui/button";
 import ThemeToggle from "./ThemeToggle";
 import heroImage from "@/assets/hero-auction-house.jpg";
 import bidsBanner from "@/assets/bids-banner.png";
+import { useState } from "react";
+
 
 const HeroSection = () => {
+  const [popupMessage, setPopupMessage] = useState<string | null>(null);
   const detectPlatform = () => {
     const ua = navigator.userAgent || navigator.vendor || (window as any).opera;
 
@@ -55,7 +58,9 @@ const HeroSection = () => {
         // For Windows, Linux, or Unknown, scroll to download section
         //const downloadSection = document.getElementById('download-section');
         //downloadSection?.scrollIntoView({ behavior: 'smooth' });
-        alert(`Comming soon for ${platform}. You can play game on IOS, Android and MAC.`);
+        setPopupMessage(
+        `Coming soon for ${platform}. You can currently play on iOS, Android, and macOS.`
+      );
     }
   };
 
@@ -153,7 +158,20 @@ const HeroSection = () => {
           </div>
         </div>*/}
       </div>
-      
+      {popupMessage && (
+  <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+    <div className="bg-white rounded-2xl shadow-xl p-6 max-w-sm text-center">
+      <h2 className="text-xl font-semibold mb-3">Notice</h2>
+      <p className="text-gray-700 mb-4">{popupMessage}</p>
+      <button
+        className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+        onClick={() => setPopupMessage(null)}
+      >
+        OK
+      </button>
+    </div>
+  </div>
+)}
     </section>
   );
 };
