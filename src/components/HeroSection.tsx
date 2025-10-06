@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "./ThemeToggle";
 import heroImage from "@/assets/hero-auction-house.jpg";
-import bidsBanner from "@/assets/bidd_no_bg.png";
+import bidsBanner from "@/assets/bids-banner.png";
 import { useState } from "react";
 
 
