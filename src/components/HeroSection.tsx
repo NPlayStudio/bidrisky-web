@@ -104,19 +104,19 @@ const HeroSection = () => {
         {/* Key features */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 shadow-card border border-border/50">
-            <div className="text-3xl mb-3">🎨</div>
-            <h3 className="font-semibold text-lg mb-2">Players</h3>
-            <p className="text-muted-foreground text-sm">5 Traders</p>
+            <div className="text-3xl mb-3"></div>
+            <h3 className="font-semibold text-lg mb-2">5 Traders</h3>
+            <p className="text-muted-foreground text-sm"></p>
           </div>
           <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 shadow-card border border-border/50">
             <div className="text-3xl mb-3">🔒</div>
-            <h3 className="font-semibold text-lg mb-2">Rounds</h3>
-            <p className="text-muted-foreground text-sm">5 - 10 - 15 Rounds</p>
+            <h3 className="font-semibold text-lg mb-2">5 - 10 - 15 Rounds</h3>
+            <p className="text-muted-foreground text-sm"></p>
           </div>
           <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 shadow-card border border-border/50">
             <div className="text-3xl mb-3">🏆</div>
-            <h3 className="font-semibold text-lg mb-2">Time</h3>
-            <p className="text-muted-foreground text-sm">1-2 Hour Game</p>
+            <h3 className="font-semibold text-lg mb-2">1-2 Hour Game</h3>
+            <p className="text-muted-foreground text-sm"></p>
           </div>
         </div>
         
