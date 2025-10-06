@@ -176,9 +176,6 @@ const HeroSection = () => {
   <br />
   <br />
     </section>
-     <br />
-  <br />
-  <br />
   );
 };
 
