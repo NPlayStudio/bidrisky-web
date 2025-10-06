@@ -4,6 +4,60 @@ import heroImage from "@/assets/hero-auction-house.jpg";
 import bidsBanner from "@/assets/bids-banner.png";
 
 const HeroSection = () => {
+  const detectPlatform = () => {
+    const ua = navigator.userAgent || navigator.vendor || (window as any).opera;
+
+    if (/windows phone/i.test(ua)) {
+      return "Windows Phone";
+    }
+    if (/windows/i.test(ua)) {
+      return "Windows";
+    }
+    if (/android/i.test(ua)) {
+      return "Android";
+    }
+    if (/iPad|iPhone|iPod/.test(ua) && !(window as any).MSStream) {
+      return "iOS";
+    }
+    if (/Macintosh|Mac OS X/i.test(ua)) {
+      return "macOS";
+    }
+    if (/Linux/i.test(ua)) {
+      return "Linux";
+    }
+    return "Unknown";
+  };
+
+  const handlePlayClick = () => {
+    const platform = detectPlatform();
+    
+    switch(platform) {
+      case "iOS":
+        window.open("https://testflight.apple.com/join/bidrisky", '_blank');
+        break;
+      case "Android":
+        const androidLink = document.createElement('a');
+        androidLink.href = "/downloads/bidrisky-android.apk";
+        androidLink.download = '';
+        document.body.appendChild(androidLink);
+        androidLink.click();
+        document.body.removeChild(androidLink);
+        break;
+      case "macOS":
+        const macLink = document.createElement('a');
+        macLink.href = "/downloads/bidrisky-mac.dmg";
+        macLink.download = '';
+        document.body.appendChild(macLink);
+        macLink.click();
+        document.body.removeChild(macLink);
+        break;
+      default:
+        // For Windows, Linux, or Unknown, scroll to download section
+        const downloadSection = document.getElementById('download-section');
+        downloadSection?.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
       {/* Theme toggle */}
@@ -72,10 +126,7 @@ const HeroSection = () => {
             variant="premium" 
             size="hero" 
             className="min-w-[200px]"
-            onClick={() => {
-              const downloadSection = document.getElementById('download-section');
-              downloadSection?.scrollIntoView({ behavior: 'smooth' });
-            }}
+            onClick={handlePlayClick}
           >
             Play
           </Button>
