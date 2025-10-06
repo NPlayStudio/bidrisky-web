@@ -172,7 +172,8 @@ const HeroSection = () => {
     </div>
   </div>
 )}
-      <footer className="bg-card/90 border-t border-border/50 text-center py-6 mt-12">
+    </section>
+     <footer className="bg-card/90 border-t border-border/50 text-center py-6 mt-12">
   <p className="text-sm text-muted-foreground">
     © {new Date().getFullYear()} BidRisky. All rights reserved.
   </p>
@@ -188,7 +189,6 @@ const HeroSection = () => {
     </a>
   </div>
 </footer>
-    </section>
   );
 };
 
