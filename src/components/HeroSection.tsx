@@ -105,18 +105,18 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 shadow-card border border-border/50">
             <div className="text-3xl mb-3">🎨</div>
-            <h3 className="font-semibold text-lg mb-2">50 Masterpieces</h3>
-            <p className="text-muted-foreground text-sm">Collect paintings from 5 legendary artists</p>
+            <h3 className="font-semibold text-lg mb-2">Players</h3>
+            <p className="text-muted-foreground text-sm">5 Traders</p>
           </div>
           <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 shadow-card border border-border/50">
             <div className="text-3xl mb-3">🔒</div>
-            <h3 className="font-semibold text-lg mb-2">Sealed Bidding</h3>
-            <p className="text-muted-foreground text-sm">Strategic hidden bids with penalty pots</p>
+            <h3 className="font-semibold text-lg mb-2">Rounds</h3>
+            <p className="text-muted-foreground text-sm">5 - 10 - 15 Rounds</p>
           </div>
           <div className="bg-card/80 backdrop-blur-sm rounded-lg p-6 shadow-card border border-border/50">
             <div className="text-3xl mb-3">🏆</div>
-            <h3 className="font-semibold text-lg mb-2">Knockout Wins</h3>
-            <p className="text-muted-foreground text-sm">Complete a collection for instant victory</p>
+            <h3 className="font-semibold text-lg mb-2">Time</h3>
+            <p className="text-muted-foreground text-sm">1-2 Hour Game</p>
           </div>
         </div>
         
@@ -133,7 +133,7 @@ const HeroSection = () => {
         </div>
         
         {/* Quick stats */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '1s' }}>
+        {/*<div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '1s' }}>
           <div className="text-center">
             <div className="text-2xl md:text-3xl font-bold text-primary">5</div>
             <div className="text-sm text-muted-foreground">Players</div>
@@ -150,7 +150,7 @@ const HeroSection = () => {
             <div className="text-2xl md:text-3xl font-bold text-accent">30-60</div>
             <div className="text-sm text-muted-foreground">Minutes</div>
           </div>
-        </div>
+        </div>*/}
       </div>
       
     </section>
