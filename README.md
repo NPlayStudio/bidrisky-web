@@ -1,73 +1,171 @@
-# Welcome to your Lovable project
+# 🖼️ Bidrisky Game Product Page
 
-## Project info
+**Version:** 1.0  
+**Author:** Grok (xAI Assistant)  
+**Date:** September 29, 2025  
+**Status:** 🟡 Draft – Pending Review  
 
-**URL**: https://lovable.dev/projects/5a757a04-ecdd-40b6-bc85-94286755b8f0
+---
 
-## How can I edit this code?
+## 📘 Overview
+The **Bidrisky Game Product Page** is the official landing page for **Bidrisky** — a strategic multiplayer auction trading card game featuring 50 paintings by five legendary artists: **Da Vinci, Rubens, Rembrandt, Goya, and Van Gogh**.
 
-There are several ways of editing your application.
+This responsive web experience acts as the **primary product showcase**, designed to:
+- Attract and engage art enthusiasts and strategy gamers  
+- Provide an immersive look at gameplay and visuals  
+- Drive conversions through optimized calls-to-action (CTAs)  
 
-**Use Lovable**
+Bidrisky combines strategy, risk management, and bluff mechanics in a multiplayer environment where players use **Bidcoin** to complete art collections and outwit their opponents.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5a757a04-ecdd-40b6-bc85-94286755b8f0) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎯 Objectives
+- **Business:** Increase sales/downloads by **30%** in the first quarter post-launch  
+- **User Experience:** Convert **50% of visitors** into sign-ups or demo downloads  
+- **Marketing Alignment:** Sync visuals, game art, and tone with brand identity  
+- **Strategic Goal:** Position Bidrisky as a **fresh, equitable take** on trading card games  
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧩 Core Features
+### 🎥 Hero Section  
+Eye-catching banner with the game title and tagline — **“Master the Art of Risky Bids”** — plus CTAs like **Play Now** and **Download Demo**.  
+> Includes an animated GIF of the game dashboard showing sealed/unsealed bids and the auction clock.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🧾 Game Overview  
+A short narrative summary explaining:  
+- 50 paintings, 5 artists  
+- Each player starts with 10 paintings and 1000 Bidcoin  
+- Objective: Complete collections for a **knockout score of 55** or achieve the **highest end-game score**
 
-Follow these steps:
+### 🧠 How to Play  
+Interactive accordion or carousel explaining:  
+- **Setup:** Deck shuffle, 4+3+3 card deal  
+- **Auction Flow:** Sealed bids, reveal phase  
+- **Penalty Pots:** Examples like “D wins 300, B/D split 150”  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🖼️ Gallery  
+High-resolution screenshots including:  
+- Dashboard (trader table & pots)  
+- Auction stand with paintings  
+- Final score table  
+- Bidcoin symbol  
+- Sample paintings like *Heads of Two Soldiers* by Da Vinci  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🏆 Key Mechanics Highlights  
+- **Bluff Bidding** – Outsmart opponents  
+- **Penalty Pots** – Risk vs reward dynamics  
+- **Rotation Order** – Fairness across rounds  
+- **Win Conditions** – Knockout or best score  
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 💰 Download & Purchase Section  
+Tiered options for accessibility and conversion:  
+- **Free Demo:** 5 rounds  
+- **Full Game:** $19.99 (15 rounds)  
+- **Multiplayer Add-on:** $4.99  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Includes links to **Steam**, **itch.io**, and app stores.
 
-**Edit a file directly in GitHub**
+### 💬 Testimonials & Social Proof  
+- Quotes from beta testers  
+- Embedded trailer (1–2 minutes)  
+- Live social feed with hashtag **#Bidrisky**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 🛠️ Tech Stack
+- **Frontend:** HTML5, CSS3, JavaScript (Tailwind or Bootstrap)  
+- **Backend/CMS:** WordPress or Webflow for easy updates  
+- **Payments:** Stripe integration  
+- **Analytics:** Google Analytics + Tag Manager  
+- **Hosting:** Netlify / Vercel / WordPress Server  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🔍 Non-Functional Requirements
+- **Performance:** Load time under **3 seconds**  
+- **Accessibility:** WCAG 2.1 AA, ARIA labels, keyboard navigation  
+- **SEO Optimization:** Keywords — `Bidrisky game`, `art auction trading card game`  
+- **Responsive Design:** Fully optimized for desktop, tablet, and mobile  
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📈 Success Metrics
 
-## How can I deploy this project?
+| Metric | Target | Tool |
+|:-------|:--------|:-----|
+| Page Views | 10,000 / month | Google Analytics |
+| Bounce Rate | < 40% | Google Analytics |
+| Conversion Rate | 20% | GA / E-commerce tracking |
+| Time on Page | > 2 minutes | Google Analytics |
+| Social Shares | 500 / month | Social Insights |
+| User Feedback (NPS) | > 7 / 10 | Post-visit Survey |
 
-Simply open [Lovable](https://lovable.dev/projects/5a757a04-ecdd-40b6-bc85-94286755b8f0) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 🚀 Launch Plan & Timeline
 
-Yes, you can!
+| Phase | Tasks | Timeline | Owner |
+|:------|:------|:----------|:------|
+| Research & Design | Finalize wireframes; A/B test CTAs | Week 1–2 | Design / PM |
+| Development | Build sections; integrate visuals | Week 3–4 | Dev Team |
+| Testing & QA | SEO audit; cross-device testing | Week 5 | QA |
+| Launch | Deploy to production; run social ad campaign | Week 6 | All |
+| Post-Launch | Monitor analytics and iterate | Ongoing | PM |
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## ⚠️ Risks & Mitigations
+| Risk | Mitigation |
+|:-----|:------------|
+| Low engagement | Conduct user testing with 10 personas |
+| Asset overload | Implement lazy-loading for images |
+| SEO delays | Pre-optimize meta tags and schema markup |
+
+---
+
+## 📂 Repository Structure
+/bidrisky-product-page
+├── /assets
+│ ├── images/
+│ ├── videos/
+│ ├── icons/
+├── /src
+│ ├── index.html
+│ ├── styles.css
+│ ├── main.js
+├── /docs
+│ ├── PRD_Bidrisky_ProductPage.pdf
+│ ├── wireframes/
+│ ├── design-guidelines.md
+├── /analytics
+│ ├── ga-config.js
+│ ├── event-tracking.md
+└── README.md
+
+
+---
+
+## 🧑‍💻 Contributors
+- **Product Manager:** Oversee milestones and marketing alignment  
+- **Design Team:** UX/UI, visual assets, wireframes  
+- **Development Team:** Frontend integration and feature builds  
+- **QA Team:** Accessibility, performance, and SEO testing  
+
+---
+
+## 🧠 License
+This project is proprietary to the **Bidrisky Development Team**.  
+All assets, images, and content are © **Arcadia Studios** unless otherwise stated.  
+
+---
+
+## 🌐 Links
+- [Official Game Page (Coming Soon)](https://bidrisky.com)  
+- [Steam Listing (Planned)](https://store.steampowered.com/)  
+- [Itch.io Page (Planned)](https://itch.io/)  
+
+---
+
+> “Master the Art of Risky Bids – Outsmart, Outbid, and Outplay.”
+d
