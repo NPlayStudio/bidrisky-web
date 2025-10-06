@@ -172,6 +172,9 @@ const HeroSection = () => {
     </div>
   </div>
 )}
+       <br />
+  <br />
+  <br />
     </section>
      <br />
   <br />
