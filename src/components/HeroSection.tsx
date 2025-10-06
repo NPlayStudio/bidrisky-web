@@ -172,6 +172,22 @@ const HeroSection = () => {
     </div>
   </div>
 )}
+      <footer className="bg-card/90 border-t border-border/50 text-center py-6 mt-12">
+  <p className="text-sm text-muted-foreground">
+    © {new Date().getFullYear()} BidRisky. All rights reserved.
+  </p>
+  <div className="flex justify-center space-x-4 mt-3">
+    <a href="/privacy" className="text-muted-foreground hover:text-primary transition">
+      Privacy Policy
+    </a>
+    <a href="/terms" className="text-muted-foreground hover:text-primary transition">
+      Terms of Service
+    </a>
+    <a href="/contact" className="text-muted-foreground hover:text-primary transition">
+      Contact
+    </a>
+  </div>
+</footer>
     </section>
   );
 };
